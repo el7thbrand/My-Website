@@ -172,6 +172,7 @@ nav a:hover:after,nav a[aria-current]:after {
 }
 
 .hero {
+  position:relative;
   min-height:calc(100svh - 96px);
   padding:45px var(--gutter) 0;
   display:flex;
@@ -214,6 +215,7 @@ h1 {
 }
 
 .hero-affiliation .tiny-label {
+  text-transform:none;
   color:var(--muted)
 }
 
@@ -614,7 +616,7 @@ details p {
 }
 
 .contact h2 {
-  font-size:clamp(55px,9vw,135px);
+  font-size:clamp(36px,4.6vw,66px);
   margin:35px 0 65px
 }
 
@@ -933,7 +935,7 @@ footer a span {
     font-size:10px
   }
   .contact h2 {
-    font-size:clamp(40px,10.5vw,61px);
+    font-size:clamp(32px,8vw,45px);
     margin-bottom:45px
   }
   .contact-bottom {
@@ -976,5 +978,83 @@ footer a span {
   .motion-enabled .reveal {
     opacity:1;
     transform:none
+  }
+}
+
+/* Clear section titles and owner-requested refinements. */
+.chapter-title {
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(30px,3.8vw,54px);
+  line-height:1.2;
+  letter-spacing:-.045em;
+  margin:0 0 44px;
+  font-weight:400;
+}
+.chapter-number {
+  color:var(--muted);
+  white-space:nowrap;
+}
+.experience-heading {
+  font-size:clamp(27px,3vw,40px);
+  line-height:1.2;
+  letter-spacing:-.035em;
+  margin:0 0 30px;
+}
+.word-tiny {
+  font-size:.65em;
+}
+.word-big {
+  font-size:1.4em;
+}
+.portrait-placeholder {
+  position:absolute;
+  top:125px;
+  right:var(--gutter);
+  width:clamp(80px,9vw,124px);
+  aspect-ratio:4 / 5;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  background:#171915;
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.08em;
+}
+.profile-link {
+  font-size:14px;
+  color:var(--fg);
+  border-bottom:1px solid var(--muted);
+  padding-bottom:5px;
+}
+.profile-link span {
+  margin-left:12px;
+}
+.profile-link:hover {
+  color:var(--muted);
+}
+.publications-heading .chapter-title {
+  font-size:clamp(30px,3.8vw,54px);
+}
+@media(max-width:900px) {
+  .portrait-placeholder {
+    top:75px;
+    width:74px;
+  }
+}
+@media(max-width:600px) {
+  .portrait-placeholder {
+    top:62px;
+    width:48px;
+    font-size:8px;
+  }
+  .chapter-title,.publications-heading .chapter-title {
+    font-size:30px;
+    margin-bottom:28px;
+  }
+  .publication-count {
+    margin-bottom:30px;
+  }
+  .experience-heading {
+    font-size:28px;
   }
 }
