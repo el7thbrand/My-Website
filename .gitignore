@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+tmp/
+*.log
+# Source CVs are private reference material, never deployment assets.
+*.pdf
