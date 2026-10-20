@@ -1009,14 +1009,13 @@ footer a span {
 }
 .hero-portrait {
   position:absolute;
-  top:125px;
+  top:85px;
   right:var(--gutter);
-  width:clamp(80px,9vw,124px);
-  aspect-ratio:4 / 5;
+  width:clamp(180px,21vw,285px);
+  aspect-ratio:auto;
   display:block;
   height:auto;
-  object-fit:cover;
-  object-position:52% 30%;
+  object-fit:contain;
   border:1px solid var(--line);
 }
 .profile-link {
@@ -1036,15 +1035,16 @@ footer a span {
 }
 @media(max-width:900px) {
   .hero-portrait {
-    top:75px;
-    width:74px;
+    top:85px;
+    width:190px;
   }
 }
 @media(max-width:600px) {
   .hero-portrait {
-    top:62px;
-    width:48px;
-    font-size:8px;
+    position:static;
+    width:clamp(150px,45vw,220px);
+    align-self:flex-end;
+    margin:24px 0 0;
   }
   .chapter-title,.publications-heading .chapter-title {
     font-size:30px;
@@ -1078,5 +1078,11 @@ footer a span {
   }
   .research-label {
     font-size:30px;
+  }
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    margin-top:30px;
   }
 }
