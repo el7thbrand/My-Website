@@ -1086,3 +1086,51 @@ footer a span {
     margin-top:30px;
   }
 }
+
+/* Fieldwork image flows with the research content and shares its reveal motion. */
+.hero-affiliation .tiny-label {
+  font-size:clamp(13px,1.1vw,16px);
+  letter-spacing:.06em;
+}
+.hero-affiliation p {
+  font-size:clamp(19px,1.6vw,23px);
+}
+.toolkit-layout {
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.5fr);
+  gap:40px;
+  align-items:start;
+}
+.toolkit-layout .skills {
+  width:100%;
+  max-width:none;
+  margin:0;
+}
+.toolkit-layout .skills .subheading {
+  margin-top:25px;
+}
+.field-photo {
+  margin:0;
+}
+.field-photo img {
+  display:block;
+  width:100%;
+  height:auto;
+  opacity:.9;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 92%,transparent);
+  mask-image:linear-gradient(to bottom,transparent,#000 6%,#000 92%,transparent);
+}
+@media(max-width:600px) {
+  .hero-affiliation .tiny-label {
+    font-size:13px;
+  }
+  .toolkit-layout {
+    grid-template-columns:minmax(0,1fr);
+    gap:20px;
+  }
+  .field-photo {
+    max-width:380px;
+    width:100%;
+    margin:0 auto;
+  }
+}

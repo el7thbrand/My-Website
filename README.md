@@ -28,3 +28,5 @@ All asset paths are relative and work at a GitHub Pages project URL. When public
 Use `git log --oneline` to review commits. To undo a committed change while preserving history, use `git revert <commit>`. Review changes with `git diff` before committing. Never force-push this repository.
 
 The portrait retains the original 1280 × 1126 image with its full proportions and no cropping. The logo cutout at `assets/idaho-vandals-transparent.png` was made with built-in ImageGen using this prompt: “Remove only the outer rectangular white background and surrounding gray drop shadow; make the exterior transparent, preserving the gold I, black outlines, white logo contour, Vandals lettering, registered mark, proportions, and interior artwork.” Original image files are preserved.
+
+The fieldwork photograph in `assets/fieldwork.jpg` is a JPEG conversion of the owner-supplied `IMG_9665.HEIC`. It appears alongside the scientific toolkit with a CSS edge fade and the existing upward scroll reveal; reduced-motion preferences disable the reveal animation. The original HEIC remains unchanged.
