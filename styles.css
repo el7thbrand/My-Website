@@ -354,9 +354,10 @@ h1 {
 }
 
 .research-intro {
-  max-width:280px;
+  max-width:430px;
   color:var(--muted);
-  font-size:14px;
+  font-size:clamp(17px,1.5vw,21px);
+  line-height:1.75;
   margin-bottom:5px
 }
 
@@ -753,7 +754,7 @@ footer a span {
     margin-top:35px
   }
   .research-intro {
-    max-width:230px
+    max-width:320px
   }
   .section {
     padding-top:85px;
@@ -1006,19 +1007,17 @@ footer a span {
 .word-big {
   font-size:1.4em;
 }
-.portrait-placeholder {
+.hero-portrait {
   position:absolute;
   top:125px;
   right:var(--gutter);
   width:clamp(80px,9vw,124px);
   aspect-ratio:4 / 5;
-  display:grid;
-  place-items:center;
+  display:block;
+  height:auto;
+  object-fit:cover;
+  object-position:52% 30%;
   border:1px solid var(--line);
-  background:#171915;
-  color:var(--muted);
-  font-size:10px;
-  letter-spacing:.08em;
 }
 .profile-link {
   font-size:14px;
@@ -1036,13 +1035,13 @@ footer a span {
   font-size:clamp(30px,3.8vw,54px);
 }
 @media(max-width:900px) {
-  .portrait-placeholder {
+  .hero-portrait {
     top:75px;
     width:74px;
   }
 }
 @media(max-width:600px) {
-  .portrait-placeholder {
+  .hero-portrait {
     top:62px;
     width:48px;
     font-size:8px;
@@ -1056,5 +1055,28 @@ footer a span {
   }
   .experience-heading {
     font-size:28px;
+  }
+}
+
+.university-logo {
+  display:block;
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+.research-label {
+  font-size:clamp(30px,3.8vw,54px);
+  line-height:1.2;
+  letter-spacing:-.045em;
+  color:var(--fg);
+  margin:0 0 30px;
+}
+@media(max-width:600px) {
+  .university-logo {
+    width:40px;
+    height:40px;
+  }
+  .research-label {
+    font-size:30px;
   }
 }

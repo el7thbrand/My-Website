@@ -11,9 +11,9 @@ From this repository, run `python3 -m http.server 8000 --bind 127.0.0.1` and vis
 - `index.html`: all academic content, bibliography, section order, and contact details.
 - `styles.css`: typography, responsive layouts, colors, and motion preferences.
 - `script.js`: reveal animations, subtle title parallax, navigation state, publication filters, and email copying.
-- `assets/`: local visual assets. Currently contains only the site favicon; no portrait or research photography has been supplied. Add verified images here when available.
+- `assets/`: local visual assets. Contains the favicon, the owner-supplied laboratory portrait, and the owner-supplied University of Idaho Vandals image used in the header.
 
-Publication numbering, titles, and venue details preserve the order and information in the supplied CV. At the owner’s request, publication author labels display the full name in first-name-first order: Elizaveta Brandukova. ISBN 978-5-74775909-1 was supplied separately by the owner for publication 5. Conference universities are not specified in the CV and have not been inferred. No peer-review status, DOI, or external publication link has been assumed. The contact section links to the owner-provided LinkedIn profile. A small portrait placeholder in the introduction is reserved for a future image in `assets/`.
+Publication numbering, titles, and venue details preserve the order and information in the supplied CV. At the owner’s request, publication author labels display the full name in first-name-first order: Elizaveta Brandukova. ISBN 978-5-74775909-1 was supplied separately by the owner for publication 5. Conference universities are not specified in the CV and have not been inferred. No peer-review status, DOI, or external publication link has been assumed. The contact section links to the owner-provided LinkedIn profile. The introduction uses the owner-supplied portrait in `assets/elizaveta-brandukova.jpg`.
 
 ## Privacy
 
